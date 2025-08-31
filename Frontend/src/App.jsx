@@ -23,7 +23,7 @@ function App() {
 
   useEffect(() => {
     if (authUser) {
-      const newSocket = io("https://chat-app-yjpv.onrender.com", {
+      const newSocket = io("http://localhost:8080", {
         transports: ["websocket"], 
         withCredentials: true,
         query:{userId: authUser._id}

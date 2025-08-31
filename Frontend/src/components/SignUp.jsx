@@ -27,7 +27,7 @@ const SignUp = () => {
     try {
       console.log("Sending user:", user);
  
-      const res = await axios.post("https://chat-app-yjpv.onrender.com/api/v1/user/register", user, {
+      const res = await axios.post("http://localhost:8080/api/v1/user/register", user, {
         headers: { 'Content-Type': 'application/json' },
         withCredentials: true
        

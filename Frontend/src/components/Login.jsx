@@ -5,7 +5,7 @@ import axios from "axios";
 import { useDispatch } from "react-redux";
 import { setAuthUser } from '../Redux/userSlice';
 
-const BASE_URL="https://chat-app-yjpv.onrender.com"
+const BASE_URL="http://localhost:8080"
 
 const Login = () => {
   const [user, setUser] = useState({
