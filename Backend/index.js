@@ -35,7 +35,11 @@ app.use("/api/v1/message",messageRoute);
 
 
 
-server.listen(PORT, ()=>{
-    connectDB();
+try {
+    await connectDB();
+    server.listen(PORT, ()=>{
     console.log(`Server listen at port ${PORT}`);
-});
+    });
+} catch (error) {
+    process.exit(1);
+}

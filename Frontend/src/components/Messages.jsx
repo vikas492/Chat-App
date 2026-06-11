@@ -13,7 +13,7 @@ const Messages = () => {
  
 
    return (
-        <div className='px-4 flex-1 overflow-auto'>
+        <div className='px-3 md:px-5 py-3 md:py-4 flex-1 min-h-0 overflow-auto space-y-1'>
             {
                messages && messages?.map((message) => {
                     return (

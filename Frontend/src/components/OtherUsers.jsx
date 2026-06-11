@@ -10,7 +10,7 @@ const OtherUsers = () => {
     if (!otherUsers) return; // early return in react
      
     return (
-        <div className='overflow-auto flex-1'>
+        <div className='overflow-auto flex-1 pr-1 space-y-2 min-h-0'>
             {
                 otherUsers?.map((user)=>{
                     return (

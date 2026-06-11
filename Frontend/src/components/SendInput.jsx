@@ -28,7 +28,7 @@ const SendInput = () => {
     
   }
   return (
-    <form onSubmit={onSubmithandler} className='px-4 my-3'>
+    <form onSubmit={onSubmithandler} className='px-3 md:px-5 py-3 md:py-4 border-t border-white/10 bg-slate-950/25 shrink-0'>
       <div className='w-full relative'>
         <input
         value={message}
@@ -37,9 +37,9 @@ const SendInput = () => {
         }}
           type="text"
           placeholder="Send a message..."
-          className='border text-sm rounded-lg block w-full p-3 border-zinc-500 bg-gray-600 text-white'
+          className='border text-sm rounded-2xl block w-full p-3 md:p-4 pr-12 border-white/15 bg-white/10 text-white placeholder:text-slate-400 focus:outline-none focus:border-cyan-300'
         />
-        <button type="submit" className='absolute flex inset-y-0 end-0 items-center pr-4'>
+        <button type="submit" className='absolute flex inset-y-0 end-0 items-center pr-4 text-cyan-300 hover:text-cyan-100'>
           <IoSend />
         </button>
       </div>
